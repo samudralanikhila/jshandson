@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create a Function</h1>
+    <pre>       
+function Check(obj1){
+    obj1.setter = function(){
+      console.log(obj1.name)
+    }
+ }
+    </pre>
+    <h1>Delete a Property</h1>
+    <pre>     
+function Check(obj1) {
+    delete obj1.rollno;
+    return obj1;
+}
+    </pre>
+    <h1>Check whether the Package is Dream Package or not</h1>
+    <pre>     
+function Check(obj1) {
+    if(obj1.salary>500000){
+      return "Dream"
+    }
+    else{
+      return "NotDream"
+    }
+}
+    </pre>
+    <h1>Check whether the Object has a parameter or not</h1>
+    <pre>
+function Check(obj1) {
+    for(var prop in obj1) {
+                  if(obj1.hasOwnProperty(prop))
+                      return "true";
+              }
+          
+              return "false";
+   
+ }; 
+    </pre>
+    <h1>Merge the Objects</h1>
+    <pre>       
+function Check(obj1,obj2) {
+    let obj3 = Object.assign(obj1,obj2);
+    return obj3;
+}
+    </pre>
+    <h1>Object Multiplyer</h1>
+    <pre> 
+function Check(a,obj1) {
+    obj1.id = a*(obj1.id)
+    obj1.houseno =a*(obj1.houseno) 
+    return obj1
+}
+    </pre>
+    <h1>Find the Sum of Data Members</h1>
+    <pre>       
+function Check(obj1) {
+    return Object.values(obj1).reduce((a,b) => a+b, 0)
+}
+    </pre>
+    <h1> Check whether the Objects are same or not.</h1>
+    <pre>
+function check(obj1,a,b) {
+    if(obj1.name==a && obj1.id==b){
+      return true
+    }
+    else{
+      return false
+    }
+}
+    </pre>
+</body>
+</html>
