@@ -1,0 +1,15 @@
+h1{
+    font-size: 15px;
+    color: burlywood;
+}
+
+#flex{
+    display: flex;
+    /* flex-direction: row; */
+}
+.hii{
+    border: 1px solid rebeccapurple;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
